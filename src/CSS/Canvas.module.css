@@ -1,0 +1,112 @@
+.MainBox{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.LeftBox{
+    /* border: 1px solid blue; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 25%;
+    padding: 40px 60px ;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+.LeftBox2{
+    display: none;
+}
+
+
+.RightBox{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 70%;
+    padding: 40px 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.CanvasBox{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    /* margin: auto; */
+    
+}
+
+
+
+.drawBtn , .eraseBtn{
+    padding: 7px 95px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+.drawBtn:hover , .eraseBtn:hover , .genBtn:hover{
+    cursor: pointer;
+}
+
+
+.genBtn{
+    padding: 7px 75px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+@media  (min-width:80px) and (max-width:900px)
+{
+    
+    .LeftBox
+    {
+        display: none;
+    }
+
+
+
+    .LeftBox2{
+        /* display: block; */
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        /* width: 25%; */
+        width: 100%;
+        padding: 40px 60px ;
+        box-sizing: border-box;
+        text-align: left;
+        margin: auto;
+    }
+
+
+
+    .RightBox{
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        /* width: 70%; */
+        width: 100%;
+        padding: 40px 0px;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+
+    .CanvasBox{
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+        /* margin: auto; */
+        
+    }
+   
+}
